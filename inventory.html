@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->
+    <link href="css/extrastyle.css" rel="stylesheet">
+    <link href="plugins/owl.carousel.min.css" rel="stylesheet">
+
+</head>
+<style>
+  
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+    .main-header .logo,.popover {
+        font-family: 'Poppins', sans-serif;
+    }
+    table tr {
+        height: 50px;
+        border-bottom: 1px solid #f1ecec;
+      
+    }
+    .table tbody tr td{
+        vertical-align: inherit;
+    }
+    .table thead tr th{
+        color: #000;
+        vertical-align: inherit;
+    }
+    .flex-bw{
+        display: flex; 
+    justify-content: space-between;
+     align-items: center;
+    }
+
+</style>
+<body>
+    <div class="wrapper thetop">
+        <aside class="main-sidebar bg-white"></aside>
+        <div class=" content-wrapper bg-white"style="min-height: 1056px;">
+            <section class="content no-print" style="background-color: #eff3ff;">  
+                <div class=" row-custom" >
+
+                    <div class="dashboard-title col-xs-12" >Inventory Dashboard</div>
+                     <div  class="col-xs-12">
+                        <div class=" ">
+                            <div class="col-md-3 col-sm-6 col-xs-6 flex-bw ">
+                               
+                                    <div class="inventory-small-box" >
+                                        <div class="info-text-new ">23</div>
+                                        <div class="custom-source-val ">Qty</div>
+                                        <div class="followup-status-head  ">To be packed</div>
+                                    </div>
+                                
+                                <div class="divider"></div>
+                              </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 flex-bw ">
+                                <div class="inventory-small-box" >
+                                    <div class="info-text-new ">23</div>
+                                    <div class="custom-source-val ">Qty</div>
+                                    <div class="followup-status-head  ">To be shipped</div>
+                                </div>
+                                <div class="divider hidden-xs"></div>
+                              </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 flex-bw ">
+                                <div class="inventory-small-box" >
+                                    <div class="info-text-new ">23</div>
+                                    <div class="custom-source-val ">Qty</div>
+                                    <div class="followup-status-head  ">To be delivered</div>
+                                </div>
+                                <div class="divider"></div>
+                              </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 flex-bw ">
+                                <div class="inventory-small-box" >
+                                    <div class="info-text-new ">23</div>
+                                    <div class="custom-source-val ">Qty</div>
+                                    <div class="followup-status-head  ">To be invoiced</div>
+                                </div>
+                                <div class="divider hidden" ></div>
+                              </div>
+                           
+                       
+                        </div>
+                    </div>
+
+
+<!--                   
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-align" >
+                        <div class=" inventory-small-box" >
+                            <div class="info-text-new ">23</div>
+                            <div class="custom-source-val ">Qty</div>
+                            <div class="followup-status-head  ">To be packed</div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-align" >
+                        <div class=" inventory-small-box" >
+                            <div class="info-text-new ">23</div>
+                            <div class="custom-source-val ">Qty</div>
+                            <div class="followup-status-head  ">To be shipped</div>
+                        </div>
+                    </div>
+
+            
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-align" >
+                        <div class=" inventory-small-box" >
+                            <div class="info-text-new ">23</div>
+                            <div class="custom-source-val ">Qty</div>
+                            <div class="followup-status-head  ">To be delivered</div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-3 col-sm-6 col-xs-6 flex-align" >
+                        <div class=" inventory-small-box" >
+                            <div class="info-text-new ">23</div>
+                            <div class="custom-source-val ">Qty</div>
+                            <div class="followup-status-head  ">To be invoiced</div>
+                        </div>
+                    </div> -->
+
+                    <!-- Product Details -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px">
+                                <div class="flex-between " style="align-items: baseline">
+                                    <div class="followup-status-head text-black" style="margin-bottom: 3.5px;">Product Details </div>
+                                </div>
+                            </div>
+                            <div class="px-20px flex-between"  style="align-items: baseline ;">
+                               <div class="receivables-box-val " style="color: #BC1414;">Low Stock Items </div>
+                               <div class="receivables-box-val "  style="color: #BC1414;">0</div>
+                            </div>
+                            <div class="p-20px flex-between" style="align-items: baseline">
+                               <div class="receivables-box-val ">All Item Groups </div>
+                               <div class="receivables-box-val ">0</div>
+                            </div>
+                            <div class="px-20px pb-20px flex-between" style="align-items: baseline">
+                               <div class="receivables-box-val ">All Items </div>
+                               <div class="receivables-box-val ">0</div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- Product of the month -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px" >
+                            
+                                <div class="flex-between" style="align-items: baseline">
+                                    <div class="followup-status-head text-black">Product of the month </div>
+                                    <div class="PeriodDate " style="margin: 0;">
+                                        <span><label>Filter by : </label>This year</span>
+                                        <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    </div>
+                                </div>  
+                            </div>
+
+                            <div class="px-20px flex-between"  style="align-items: baseline ;">
+                                <div class="receivables-box-val " style="color: #BC1414;">Product Details </div>
+                                <div class="receivables-box-val "  style="color: #BC1414;">0</div>
+                             </div>
+                             <div class="p-20px flex-between" style="align-items: baseline">
+                                <div class="receivables-box-val ">Product Details </div>
+                                <div class="receivables-box-val ">0</div>
+                             </div>
+                             <div class="px-20px pb-20px flex-between" style="align-items: baseline">
+                                <div class="receivables-box-val ">Product Details </div>
+                                <div class="receivables-box-val ">0</div>
+                             </div>
+     
+                            
+                        </div>
+                    </div>
+
+                    <!-- Sales Order table -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                                <div class="box-main-title">Sales Order  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <div class="PeriodDate ">
+                                    <span><label>Filter by : </label>Created</span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    
+                                </div>
+                                
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th scope="col"><span class="followup-status-head"> Total</span></th>
+                                    <th scope="col"><span class="followup-status-head">Ordered</span></th>
+                                    <th scope="col"><span class="followup-status-head">Partial</span></th>
+                                    <th scope="col"><span class="followup-status-head">Completed</span></th>
+                                    <th scope="col"><span class="followup-status-head">Invoice</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr >
+                                    <td >
+                                        <div class="custom-td-title">45</div>     
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td >
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <!-- <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div> -->
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td >
+                                        <div class="custom-td-title">45</div>     
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td >
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <!-- <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div> -->
+                                    </td>
+                                  </tr>
+                                
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Shipments table -->
+                    <div class="col-xs-12 pt-5">
+                        <div class="custom-content-box" style="background-color: white;">
+                            <!-- button -->
+                            <div class="flex-between due-table-position " >
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/left-con.svg"  type="image/svg+xml">
+                                </div>
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                </div>
+                            </div>
+                            <div class="box-main-title">Shipments</div>
+                           
+                            
+                            <!-- filter row -->
+                            <div class="PeriodDate " >
+                                <span ><label>Filter by :</label> Location</span>
+                                <span class="circle " ></span>
+                                <span ><label>Date :</label> 12/02/2023</span>
+                                <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+                            
+                            </div>
+                            
+                            <table class="table text-center table-no-divider">
+                                <thead >
+                                  <tr style="border-bottom: 1px solid #f1ecec;">
+                                    <th ><span class="custom-th">Location</span></th>
+                                    <th ><span class="custom-th">Total</span></th>
+                                    <th ><span class="custom-th">Processing</span></th>
+                                    <th ><span class="custom-th">Packed</span></th>
+                                    <th ><span class="custom-th">Shipped</span></th>
+                                    <th ><span class="custom-th">Reached Hub</span></th>
+                                    <th ><span class="custom-th">Delivered</span></th>
+                                    <th ><span class="custom-th">Cancelled</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr style="border-bottom: 1px solid #f1ecec;" >
+                                    <td  >
+                                        <div class="custom-td-title">Abad Sait</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Lifestage</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    
+                                    <td >
+                                        <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pending Shipments table -->
+                    <div class="col-xs-12 pt-5">
+                        <div class="custom-content-box" style="background-color: white;">
+                              <!-- button -->
+                              <div class="flex-between due-table-position " >
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/left-con.svg"  type="image/svg+xml">
+                                </div>
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                </div>
+                            </div>
+
+                            <div class="box-main-title">Pending Shipments</div>
+                           
+                            <!-- filter row -->
+                            <div class="PeriodDate " >
+                                <span ><label>Filter by :</label> Location</span>
+                                <span class="circle " ></span>
+                                <span ><label>Date :</label> 12/02/2023</span>
+                                <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+                            </div>
+                            <table class="table text-center table-no-divider">
+                                <thead >
+                                  <tr style="border-bottom: 1px solid #f1ecec;">
+                                    <th ><span class="custom-th">Date</span></th>
+                                    <th ><span class="custom-th">Invoice No</span></th>
+                                    <th ><span class="custom-th">Customer Name</span></th>
+                                    <th ><span class="custom-th">Contact</span></th>
+                                    <th ><span class="custom-th">Location</span></th>
+                                    <th ><span class="custom-th">Shipping Status</span></th>
+                                    <th ><span class="custom-th">Payment Status</span></th>
+                                    <th ><span class="custom-th">Action</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr style="border-bottom: 1px solid #f1ecec;" >
+                                    <td >
+                                        <div class="custom-td-title">Abad Sait</div>
+                                     
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Lifestage</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                   
+                                    <td >
+                                        <div style="display: flex;justify-content: center;">
+                                            <div class="col-4 col-md-6 status-content-subbox ">
+                                                <div class="" style="display: flex;">
+                                                    <span class=" fs-content-dot"></span> 
+                                                    <span class=" fs-content-text">Scheduled</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <div style="display: flex;justify-content: center;">
+                                            <div class="col-4 col-md-6 status-content-subbox ">
+                                                <div class="" style="display: flex;">
+                                                    <span class=" fs-content-dot"></span> 
+                                                    <span class=" fs-content-text">Paid</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </td>
+                                   
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!--Sales Order table -->
+                    <div class="col-xs-12 pt-5">
+                        <div class="custom-content-box" style="background-color: white;">
+                             <!-- button -->
+                             <div class="flex-between due-table-position " >
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/left-con.svg"  type="image/svg+xml">
+                                </div>
+                                <div type="button" class="button-box-1">
+                                    <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                </div>
+                            </div>
+                            <div class="box-main-title">Sales Order</div>
+                            
+                            <!-- filter row -->
+                            <div class="PeriodDate " >
+                                <span ><label>Filter by :</label> Location</span>
+                                <span class="circle " ></span>
+                                <span ><label>Date :</label> 12/02/2023</span>
+                                <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+                            </div>
+                            <table class="table text-center table-no-divider">
+                                <thead >
+                                  <tr style="border-bottom: 1px solid #f1ecec;">
+                                    <th ><span class="custom-th">Date</span></th>
+                                    <th ><span class="custom-th">Order No</span></th>
+                                    <th ><span class="custom-th">Customer Name</span></th>
+                                    <th ><span class="custom-th">Contact Number</span></th>
+                                    <th ><span class="custom-th">Location</span></th>
+                                    <th ><span class="custom-th">Status</span></th>
+                                    <th ><span class="custom-th">Shipping Status</span></th>
+                                    <th ><span class="custom-th">Quantity Remaining</span></th>
+                                    <th ><span class="custom-th">Action</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr style="border-bottom: 1px solid #f1ecec;" >
+                                    <td >
+                                        <div class="custom-td-title">Abad Sait</div>
+                                       
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">Lifestage</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">₹50,000</div>
+                                    </td>
+                                    <td >
+                                        <div style="display: flex;justify-content: center;">
+                                            <div class="col-4 col-md-6 status-content-subbox ">
+                                                <div class="" style="display: flex;">
+                                                    <span class=" fs-content-dot"></span> 
+                                                    <span class=" fs-content-text">Scheduled</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <div style="display: flex;justify-content: center;">
+                                            <div class="col-4 col-md-6 status-content-subbox ">
+                                                <div class="" style="display: flex;">
+                                                    <span class=" fs-content-dot"></span> 
+                                                    <span class=" fs-content-text">Paid</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </td>
+                                    <td >
+                                        <div class="custom-td-title">10</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Bill of Materials box -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px">
+                                <div class="flex-between " style="align-items: baseline">
+                                    <div class="box-main-title" style="margin-bottom: 3.5px;">Bill of Materials </div>
+                                </div>
+                            </div>
+
+                            <div class="row pb-20px px-20px"> 
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Pending</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Processing</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Completed</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Cancelled</div>
+                                </div>
+                               
+                               
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Material Requests box -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px">
+                                <div class="flex-between " style="align-items: baseline">
+                                    <div class="box-main-title" style="margin-bottom: 3.5px;">Material Requests </div>
+                                </div>
+                            </div>
+
+                            <div class="row pb-20px px-20px"> 
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Pending</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Processing</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Completed</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Cancelled</div>
+                                </div>
+                               
+                               
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Purchase Requests box -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px">
+                                <div class="flex-between " style="align-items: baseline">
+                                    <div class="box-main-title" style="margin-bottom: 3.5px;">Purchase Requests </div>
+                                </div>
+                            </div>
+
+                            <div class="row pb-20px px-20px"> 
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Pending</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Processing</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Completed</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Cancelled</div>
+                                </div>
+                               
+                               
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Request for Quote box -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box" >
+                            <div class="p-20px">
+                                <div class="flex-between " style="align-items: baseline">
+                                    <div class="box-main-title" style="margin-bottom: 3.5px;">Request for Quote </div>
+                                </div>
+                            </div>
+
+                            <div class="row pb-20px px-20px"> 
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Pending</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Processing</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Completed</div>
+                                </div>
+                                <div class="col-sm-3 col-xs-6 flex-col-center" style="align-items: center;" >
+                                        <div class="info-text-new ">0</div>
+                                        <div class="custom-source-val ">Cancelled</div>
+                                </div>
+                               
+                               
+                               
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

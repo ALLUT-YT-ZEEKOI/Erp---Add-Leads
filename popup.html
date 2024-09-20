@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->
+    <link href="css/extrastyle.css" rel="stylesheet">
+    <link href="plugins/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<style>
+  
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+   .tab-item-bottom-active{
+    height: 0px;
+     border: 1px #FF7800 solid !important;
+     visibility: visible !important;
+    }
+
+    .notification-popup-box .tab-item-bottom  {
+    visibility: hidden;
+    margin-top: 20px;
+    width: 110px;
+    }
+
+
+
+</style>
+<body>
+    <div class="wrapper thetop">
+        <div class=" content-wrapper bg-white"style="min-height: 1056px;">
+           <!-- customer popup -->
+            <div class="customer-out-box " id="customer-pop">
+                <div class="customer-pop-box customer-active ">
+                    <span>Customers</span>
+                    <span class="material-symbols-outlined">done</span>
+                </div>
+                
+                <div class="customer-pop-box">
+                    <span>Customers</span>
+                    <span class="material-symbols-outlined">done</span>
+               </div>
+                
+                <div class="customer-pop-box">
+                    <span>Customers</span>
+                    <span class="material-symbols-outlined">done</span>
+                </div>
+                
+                <div class="customer-pop-box">
+                    <span>Customers</span>
+                    <span class="material-symbols-outlined">done</span>
+                </div>
+                
+                <div class="customer-pop-box">
+                    <span>Customers</span>
+                    <span class="material-symbols-outlined">done</span>
+                </div>
+            </div>
+            <!-- zeekoi  popup -->
+            <div class="customer-out-box mt-8 " id="zeekoi-pop" style="height: 150px;">
+                <div class="customer-pop-box customer-active ">
+                    <span>Zeekoi UAE</span>
+                    <span class="material-symbols-outlined">done</span>
+                </div>
+                
+                <div class="customer-pop-box">
+                    <span>Zeekoi INDIA</span>
+                    <span class="material-symbols-outlined">done</span>
+               </div>
+                
+            </div>
+
+            <!-- general basic popup -->
+            <div class="general-basic-box " >
+
+               <div class="row">
+                <div class="col-xs-6">
+                    <div class="mb-4" > <img src="icons/general-icon.svg" type="image/svg+xml" style="height: 25px;"><span class="pl-5 custom-td-title">General</span></div>
+                    <div class="pointer flex-start my-4" > <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Create user</span></div>
+                    <div class="pointer flex-start my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Create contact</span></div>
+             
+  
+                  </div>
+  
+                  <div  class="col-xs-6">
+                      <div class= "pointer mb-4"><img src="icons/general-icon.svg" type="image/svg+xml" style="height: 25px;"><span class="pl-5 custom-td-title">Basic</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Sales</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Purchase</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Income</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Expense</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">POS</span></div>
+                      <div class= "pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Sale Order</span></div>
+                  </div>
+  
+               </div>
+            </div>
+
+            <!-- settings popup -->
+            <div class="settings-pop-box">
+                <div class="pointer mb-4 flex-start"><span class="material-symbols-outlined ">settings</span><span class="pl-5 custom-td-title">Settings</span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Business Settings</span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Business Location</span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Invoice Settings</span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Barcode Settings </span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Receipt Printer</span></div>
+                <div class="pointer flex-start  my-4"> <span class="material-symbols-outlined">add</span><span class="pl-5 custom-td-title">Tax Rates</span></div>
+            </div>
+            
+            <!-- notification popup -->
+            <div class="notification-popup-box">
+                <div class="notification-popup-head">
+                    <div style="display: flex;">
+                        <div class="text-center mr-8 todo_click">
+                            <span class="followup-status-head">Notifications</span>
+                            <div  class="tab-item-bottom"></div>
+                        </div>
+                        <div  class="text-center ml-8 todo_click">
+                            <span class="followup-status-head">Announcements</span>
+                            <div class="tab-item-bottom tab-item-bottom-active" style="width: 140px;"></div>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined mb-20px">desktop_windows</span>
+                </div>
+                <div class="flex-col-center" style="height:430px;align-items: center;">
+                    <img class="pb-20px" src="icons/mail-box 1.svg " style="height: 150px;" type="image/svg+xml">
+                    <div class="custom-td-title">
+                        Uhh... There are no notifications at themoment.
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile popup -->
+            <div class="notification-popup-box my-2 relative" style="height: 650px;">
+                <img class="absolute" src="icons/solar_close-square-broken.svg" type="image/svg+xml" style="height: 35px;top: 15px;right: 36px;">
+                <!-- heaad -->
+                <div class="notification-popup-head" style="height: 125px;">
+                    <div class="flex-col-end mb-20px">
+                        <div class="flex-start ">
+                            <div style="width: 60px; height: 60px; background: #D9D9D9; border-radius: 999px;margin-right: 15px;"></div>
+                            <div class="flex-col-bw h75">
+                                <div class=" box-main-title"> Hello, abdu</div>
+                                <div class="popup-text" style="text-align: start;">Zeekoi</div>
+                            </div>
+                        </div>
+                        <div class="flex-start mt-3">
+                            <div class="popup-text   ">User ID: 7687687785578</div>
+                            <div class=" mx-8" style="width: 5px; height: 5px; background: #525151; border-radius: 9999px"></div>
+                            <div class="popup-text ">Organization ID: 7687687785578</div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;height: 50px; border-bottom: 1px #BDBDBD solid;display: flex;align-items: center;justify-content: space-between;padding: 0 40px;">
+                    <span class="fs-15 fw-600 pointer" style="color: #0094FF;">My Account</span>
+                    <div class="flex-align pointer FF4848" >
+                        <span class="material-symbols-outlined">logout</span>
+                        <span class="fs-15 fw-500">Sign Out</span>
+                    </div>
+
+                </div>
+                <div class="flex-between mx-45px my-20px"  >
+                    <div class="flex-col-center">
+                        <img src="icons/lni_lni-home.svg" class="pointer mb-20px" type="image/svg+xml" style="height: 60px;">
+                        <span class="text-center popup-text">Video Tutorials</span>
+                    </div>
+                    <div class="flex-col-center">
+                        <img src="icons/lni_lni-home.svg" class="pointer mb-20px" type="image/svg+xml" style="height: 60px;">
+                        <span class="text-center popup-text">FAQs</span>
+                    </div>
+                    <div class="flex-col-center">
+                        <img src="icons/lni_lni-home.svg" class="pointer mb-20px" type="image/svg+xml" style="height: 60px;">
+                        <span class="text-center popup-text">Explore Features</span>
+                    </div>
+                </div>
+
+                <div class="mt-8 " style=" border-top: 1px #BDBDBD solid;padding: 40px;">
+                   <div class="followup-status-head">Need Assistance?</div>
+                   <div class="flex-start my-8 pointer">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="popup-text mx-4">Send an email</span>
+                    <span class="material-symbols-outlined FF4848" >chevron_right</span>
+                   </div>
+                   <div class="flex-start mt-8 pointer">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="popup-text ml-4">Talk to us</span>
+                    <span class="fs-10 " > (Mon - Fri  9:00 AM - 7:00 PM)</span>
+                   </div>
+                </div>
+                <div  style=" border-top: 1px #BDBDBD solid;padding: 40px;">
+                   <div class="followup-status-head">Need Assistance?</div>
+                  
+                </div>
+            </div>
+
+            <!--all zonar modules  -->
+            <div class="notification-popup-box my-2 relative" style="height: auto;">
+                <img class="absolute" src="icons/solar_close-square-broken.svg" type="image/svg+xml" style="height: 35px;top: 15px;right: 36px;">
+                <!-- heaad -->
+                 <div class="notification-popup-head followup-status-head" style="align-items: center;" >All Zonar Modules</div>
+                <!-- modules -->
+                 <div class="mx-40px py-20px">
+                    <div class="module-box my-4">
+                        <span class="material-symbols-outlined absolute module-hover" style="right: 10px;color: #05BC51;">done</span>
+                        <img src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                       
+                        <div class="flex-col-center ml-8" style="align-items: start;">
+                            <span class="followup-status-head">Zonar HRM</span>
+                            <span class="custom-td-title mt-1">Human Resource Management Software</span>
+                            <span class="fs-10 fw-600" style="color: #05BC51;">Purchased</span>
+                        </div>
+                    </div>
+                    <div class="module-box my-4">
+                        <span class="material-symbols-outlined absolute module-hover" style="right: 10px;color: #0094FF;">chevron_right</span>
+                        <img src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                        <div class="flex-col-center ml-8" style="align-items: start;">
+                            <span class="followup-status-head">Zonar CRM</span>
+                            <span class="custom-td-title mt-1">Customer Relationship Management Software</span>
+                            <span class="fs-10 fw-600" style="color: #0094FF;">To know more</span>
+                        </div>
+                    </div>
+                    <div class="module-box my-4">
+                         <span class="material-symbols-outlined absolute  module-hover" style="right: 10px;color: #0094FF;">chevron_right</span>
+                        <img src="icons/Logo1 1.svg" type="image/svg+xml" style="height: 35px;">
+                        <div class="flex-col-center ml-8" style="align-items: start;">
+                            <span class="followup-status-head">Zonar Project Management</span>
+                            <span class="custom-td-title mt-1">Project Management Software</span>
+                            <span class="fs-10 fw-600" style="color: #0094FF;">To know more</span>
+                        </div>
+                    </div>
+                    <div class="module-box my-4">
+                         <span class="material-symbols-outlined absolute  module-hover" style="right: 10px;color: #0094FF;">chevron_right</span>
+                        <img src="icons/Logo1 1.svg" type="image/svg+xml" style="height: 35px;">
+                        <div class="flex-col-center ml-8" style="align-items: start;">
+                            <span class="followup-status-head">Zonar Project Management</span>
+                            <span class="custom-td-title mt-1">Finance Management Software</span>
+                            <span class="fs-10 fw-600" style="color: #0094FF;">To know more</span>
+                        </div>
+                    </div>
+                    <div class="module-box my-4">
+                         <span class="material-symbols-outlined absolute  module-hover" style="right: 10px;color: #0094FF;">chevron_right</span>
+                        <img src="icons/Logo1 1.svg" type="image/svg+xml" style="height: 35px;">
+                        <div class="flex-col-center ml-8" style="align-items: start;">
+                            <span class="followup-status-head">Zonar Project Management</span>
+                            <span class="custom-td-title mt-1">Manufacturing Software</span>
+                            <span class="fs-10 fw-600" style="color: #0094FF;">To know more</span>
+                        </div>
+                    </div>
+                    
+
+                 </div>
+
+                 <!--mobile apps -->
+                 <div class="mx-40px py-8">
+                    <div class="followup-status-head text-black">Mobile Apps</div>
+                    <hr style="opacity:0.4;">
+                    <div class="flex-arround">
+                       <div class="flex-col-center w25">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">ZCRM</span>
+                       </div>
+                       <div class="flex-col-center w25">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">Ztrack</span>
+                       </div>
+                       <div class="flex-col-center w25">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">Zone</span>
+                       </div>
+                       <div class="flex-col-center w25">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">Zdash</span>
+                       </div>
+                        
+                    </div>
+
+                 </div>
+
+                 <!-- Integrations  -->
+                 <div class="mx-40px py-8">
+                    <div class="followup-status-head text-black">Integrations</div>
+                    <hr style="opacity:0.4;">
+                    <div class="flex-arround">
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center" style="text-align: center;">Biometric Punching</span>
+                       </div>
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center" style="text-align: center;">Facebook Lead</span>
+                       </div>
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center" style="text-align: center;">Mail Service</span>
+                       </div>
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center" style="text-align: center;">Payment Gateway</span>
+                       </div>
+                        
+                    </div>
+
+                 </div>
+
+                 <!-- Add-Ons -->
+                 <div class="mx-40px py-8">
+                    <div class="followup-status-head text-black">Add-Ons</div>
+                    <hr style="opacity:0.4;">
+                    <div class="flex-arround">
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">Aizo</span>
+                       </div>
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center">Forms</span>
+                       </div>
+                       <div class="flex-col-center w25" style="justify-content: start;">
+                            <img class="app-icon" src="icons/zeecrm 1.svg" type="image/svg+xml" style="height: 35px;">
+                            <span class="followup-status-head mt-4 text-center" style="text-align: center;">Team <br> Messaging</span>
+                       </div>
+                       <div class="w25">
+
+                       </div>
+                     
+                      
+                    </div>
+
+                 </div>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script>
+       $(document).ready(function(){
+        $('div#customer-pop .customer-pop-box').click(function(){
+            $('div#customer-pop .customer-active').removeClass('customer-active');
+            $(this).addClass('customer-active');
+        });
+        $('div#zeekoi-pop .customer-pop-box').click(function(){
+            $('div#zeekoi-pop .customer-active').removeClass('customer-active');
+            $(this).addClass('customer-active');
+        });
+        $('.todo_click').click(function(){
+            $('.tab-item-bottom').removeClass('tab-item-bottom-active');
+            $(this).children('.tab-item-bottom').addClass('tab-item-bottom-active');
+
+        });
+       });
+
+    </script>
+   </body>
+</html>

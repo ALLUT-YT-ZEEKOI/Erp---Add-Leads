@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->
+    <link href="css/extrastyle.css" rel="stylesheet">
+    <link href="plugins/owl.carousel.min.css" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .main-header .logo,.popover {
+            font-family: 'Poppins', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper thetop">
+       
+        <aside class="main-sidebar bg-white"></aside>
+        <div class=" content-wrapper bg-white"style="min-height: 1056px;">
+            <section class="content no-print" style="background-color: white;">
+
+            <div class="dashboard-title">CRM Dashboard</div>
+
+           <div style="padding: 15px;">
+             <!-- lead row filter -->
+             <div class="PeriodDate " >
+                <span ><label>Period :</label> date</span>
+                <span class="circle " ></span>
+                <span ><label>Users :</label> Nil</span>
+                <span  class="circle " ></span>
+                <span ><label>Sort by :</label> Created At</span>
+                <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+            </div>
+
+
+            <!-- lead count display row -->
+            <div class="row row-custom">
+                <div class="col-md-3 col-sm-6 col-xs-6 info-col ">
+                  <div >
+                    <div class="info-head"><img class="info-img" src="icons/leads.svg"  type="image/svg+xml">My total leads</div>
+                    <div class="col-custom" style="align-items: center;">
+                       <span class="info-text-new">23</span>
+                    </div>
+                    <div class=" info-inner-box" >
+                        <i class="fa fas fa-arrow-up "></i>
+                        <span >0.08%</span>
+                   </div>
+                    <div>
+                        <span class="info-last-month-text">vs last month:</span>
+                        <span class="info-last-month-count" >20</span>
+                    </div>
+                   
+                </div>
+                  <div class="divider"></div>
+                </div>
+
+                <div class="col-md-3  col-sm-6 col-xs-6 info-col ">
+                  <div >
+                    <div class="info-head"><img class="info-img" src="icons/open.svg"  type="image/svg+xml">My open leads</div>
+                    <div class="col-custom" style="align-items: center;">
+                       <span class="info-text-new" >23</span>
+                      
+                    </div>
+                    <div class=" info-inner-box" >
+                        <i class="fa fas fa-arrow-up "></i>
+                        <span >0.08%</span>
+                   </div>
+                    <div>
+                        <span class="info-last-month-text">vs last month:</span>
+                        <span class="info-last-month-count" >20</span>
+                    </div>
+                  
+                </div>
+                
+                  <div class="divider visible-md visible-lg"></div>
+                 
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-6 info-col ">
+                  <div >
+                    <div class="info-head"><img class="info-img" src="icons/won.svg"  type="image/svg+xml">My won leads</div>
+                    <div class="col-custom" style="align-items: center;">
+                       <span class="info-text-new">23</span>
+                      
+                      </div>
+                      <div class=" info-inner-box" >
+                        <i class="fa fas fa-arrow-up "></i>
+                        <span >0.08%</span>
+                    </div>
+                  
+                      <div>
+                        <span class="info-last-month-text">vs last month:</span>
+                        <span class="info-last-month-count" >20</span>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-6 info-col ">
+                  <div >
+                    <div class="info-head"><img class="info-img" src="icons/lost.svg"  type="image/svg+xml">My lost leads</div>
+                    <div class="col-custom"style="align-items: center;">
+                       <span class="info-text-new">23</span>
+                       
+                    </div>
+                    <div class=" info-inner-box" >
+                        <i class="fa fas fa-arrow-up "></i>
+                        <span >0.08%</span>
+                   </div>
+                    <div>
+                        <span class="info-last-month-text" >vs last month:</span>
+                        <span class="info-last-month-count" >20</span>
+                   </div>
+                   
+                  </div>
+                  <div class="divider "></div>
+                
+                </div>
+
+            </div>
+           </div>
+
+            <!-- Deal Pipeline box -->
+            <div class="col">
+                <div class="custom-content-box" >
+                    <div class="box-main-title">Deal Pipeline</div>
+
+                    <!-- filter row -->
+                    <div class="PeriodDate " >
+                        <span ><label>Period :</label> date</span>
+                        <span class="circle " ></span>
+                        <span ><label>Users :</label> Nil</span>
+                        <span  class="circle " ></span>
+                        <span ><label>Sort by :</label> Created At</span>
+                        <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+                    </div>
+                    
+                    <!-- life stage item row -->
+                    <div class="row">
+                        <div id="owl-example" class="owl-carousel">
+                            <!-- life stage item  -->
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml"> Lifestage 1</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 2</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                  <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 3</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                  <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 4</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                  <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 5</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                  <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 6</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                                <div class=" hidden-xs">  <img  src="icons/tabler_route.svg"  type="image/svg+xml"></div>
+                                
+                            </div>
+                            <div class=" info-col item" >
+                                <div>
+                                    <div class="info-head"> <img class="info-img" src="icons/material-symbols_route.svg"  type="image/svg+xml">Lifestage 7</div>
+                                    <div class="label-inner-amount">₹50,000</div>
+                                    <div>
+                                        <span class="info-last-month-text">Deal:</span>
+                                        <span class="info-last-month-count" >20</span>
+                                    </div>
+                                </div>
+                               
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-4 row pt-5">
+
+                <div class="col-md-12 col-lg-6 ">
+                     <!-- convert to coustomer box -->
+                    <div class="col  customer-box">
+                        <div  class="col-md-2 col-sm-2 " >
+                            <img src="icons/Group 22.svg"  type="image/svg+xml">
+                        </div>
+                        <div class="col-md-8 col-sm-8 ">
+                            <div class=" customer-box-text">Converted to Customers</div>
+                            <div class="customer-box-count">800</div>
+                        </div>
+                        <div class="">
+                            <img src="icons/customericon.svg"  type="image/svg+xml">
+                        </div>
+                    </div>
+
+                    <!-- followup status box -->
+
+                    <div class="col   followup-status-box " >
+
+                        <div class="col-xs-12 row " style="margin-bottom: 30px;">
+                            <div class="col-xs-6   text-center"><span class="followup-status-head"><img src="icons/mingcute_user-follow-2.svg"  type="image/svg+xml">Follow Up Status</span></div>
+                            <div class="text-center col-xs-6"><span class="followup-status-head"><img src="icons/leads.svg"  type="image/svg+xml">Total</span></div>
+                        </div>
+
+                         <!-- followup status box content section -->
+
+                        <div class="col-10  fs-content-box "  >
+                            <div class="col-4 col-md-6 fs-content-subbox "  >
+                            <div class="" style="display: flex;">
+                                <span class=" fs-content-dot" ></span> 
+                                <span class=" fs-content-text">Scheduled</span>
+                            </div>
+                            </div> 
+                            <div class="col"></div>
+                            <div class="col-3 fs-content-count " style=" color:#0094FF;">500</div>
+                        </div>
+
+                        <div class="col-10  fs-content-box " style=" background:#E5F4FF;" >
+                            <div class="col-4 col-md-6 fs-content-subbox " style=" background:#E5F4FF;border:0.50px #0094FF solid;" >
+                            <div class="" style="display: flex;">
+                                <span class=" fs-content-dot" style=" background-color: #0094FF;" ></span> 
+                                <span class=" fs-content-text" style=" color:#0094FF;">Open</span>
+                            </div>
+                            </div> 
+                            <div class="col"></div>
+                            <div class="col-3 fs-content-count " style=" color:#0094FF;">500</div>
+                        </div>
+
+                        <div class="col-10  fs-content-box " style="background:#FFE5E5;" >
+                            <div class="col-4 col-md-6 fs-content-subbox " style="background:#FFE5E5;border:0.50px #BC1414 solid;" >
+                               <div class="" style="display: flex;">
+                                <span class=" fs-content-dot" style="background-color: #BC1414;" ></span> 
+                                <span class=" fs-content-text" style="color: #BC1414;">Cancelled</span>
+                               </div>
+                            </div> 
+                            <div class="col"></div>
+                            <div class="col-3 fs-content-count " style="color: #BC1414;">500</div>
+                        </div>
+
+                        <div class="col-10  fs-content-box " style="background:#E5FFF0;" >
+                            <div class="col-4 col-md-6 fs-content-subbox " style="background:#E5FFF0;border:0.50px #05BC51 solid;" >
+                               <div class="" style="display: flex;">
+                                <span class=" fs-content-dot" style="background-color: #05BC51;" ></span> 
+                                <span class=" fs-content-text" style="color: #05BC51;">Completed</span>
+                               </div>
+                            </div> 
+                            <div class="col"></div>
+                            <div class="col-3 fs-content-count " style="color: #05BC51;">500</div>
+                        </div>
+                     
+                         <!-- <div style="width: 100%;    display: flex;justify-content: center;">
+                         <table >
+                            <tbody>
+                                <tr>
+                                    <td>
+                                       
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-10  fs-content-box " style=" background:#E5F4FF;" >
+                                            <div class="col-4 col-md-6 fs-content-subbox " style=" background:#E5F4FF;border:0.50px #0094FF solid;" >
+                                            <div class="" style="display: flex;">
+                                                <span class=" fs-content-dot" style=" background-color: #0094FF;" ></span> 
+                                                <span class=" fs-content-text" style=" color:#0094FF;">Open</span>
+                                            </div>
+                                            </div> 
+                                            <div class="col"></div>
+                                            <div class="col-3 fs-content-count " style=" color:#0094FF;">500</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-10  fs-content-box " style="background:#FFE5E5;" >
+                                            <div class="col-4 col-md-6 fs-content-subbox " style="background:#FFE5E5;border:0.50px #BC1414 solid;" >
+                                               <div class="" style="display: flex;">
+                                                <span class=" fs-content-dot" style="background-color: #BC1414;" ></span> 
+                                                <span class=" fs-content-text" style="color: #BC1414;">Cancelled</span>
+                                               </div>
+                                            </div> 
+                                            <div class="col"></div>
+                                            <div class="col-3 fs-content-count " style="color: #BC1414;">500</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="col-10  fs-content-box " style="background:#E5FFF0;" >
+                                            <div class="col-4 col-md-6 fs-content-subbox " style="background:#E5FFF0;border:0.50px #05BC51 solid;" >
+                                               <div class="" style="display: flex;">
+                                                <span class=" fs-content-dot" style="background-color: #05BC51;" ></span> 
+                                                <span class=" fs-content-text" style="color: #05BC51;">Completed</span>
+                                               </div>
+                                            </div> 
+                                            <div class="col"></div>
+                                            <div class="col-3 fs-content-count " style="color: #05BC51;">500</div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div> -->
+
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 ">
+
+                    <!-- Source status box -->
+                    <div  class="source-status-box">
+                        <div style="padding: 0px 20px;">
+                            <table class="table text-center  table-source table-no-divider">
+                                <thead  >
+                                  <tr  style="border-bottom: 1px solid #f1ecec;">
+                                    <th style="line-height: 3;text-align: initial;" ><span class="followup-status-head"><img src="icons/street-view 1.svg"  type="image/svg+xml">Source</span></th>
+                                    <th style="line-height: 3;"  ><span class="followup-status-head"><img src="icons/leads.svg"  type="image/svg+xml">Total</span></th>
+                                    <th style="line-height: 3;text-align: end;" ><span class="followup-status-head"><img src="icons/won.svg"  type="image/svg+xml">Conversion</span></th>
+                                  </tr>
+                                </thead>
+
+                                <tbody  >
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid #f1ecec;" >
+                                        <td style="text-align: initial;"  >
+                                            <span class="custom-source-val ">Instagram</span>
+                                        </td>
+                                        <td  >
+                                            <span class="custom-source-count ">Lifestage</span>
+                                        </td>
+                                        <td style="text-align: end;" >
+                                            <span class="custom-source-count ">₹50,000</span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody >
+                            </table>
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- new leads section -->
+            <div class="col pt-5">
+                <div class="custom-content-box">
+                    <div class="flex-between due-table-position ">
+                        <div type="button" class="button-box-1">
+                            <img src="icons/left-con.svg" type="image/svg+xml">
+                        </div>
+                        <div type="button" class="button-box-1">
+                            <img src="icons/right-icon.svg" type="image/svg+xml">
+                        </div>
+                    </div>
+                    <div class="box-main-title">New Leads</div>
+                    <!-- filter row -->
+                    <div class="PeriodDate " >
+                        <span ><label>Period :</label> date</span>
+                        <span class="circle " ></span>
+                        <span ><label>Users :</label> Nil</span>
+                        <span  class="circle " ></span>
+                        <span ><label>Sort by :</label> Created At</span>
+                        <div data-toggle="modal" data-target="#staticBackdrop"  type="button">Change</div>
+                    </div>
+                    <table class="table text-center table-no-divider">
+                        <thead >
+                          <tr style="border-bottom: 1px solid #f1ecec;">
+                            <th scope="col"><span class="custom-th"> <img src="icons/lead filled.svg"  type="image/svg+xml">Source</span></th>
+                            <th scope="col"><span class="custom-th"><img src="icons/material-symbols_route fill.svg"  type="image/svg+xml">Lifestage</span></th>
+                            <th scope="col"><span class="custom-th"><img src="icons/iconoir_receive-dollars.svg"  type="image/svg+xml">Value</span></th>
+                            <th scope="col"><span class="custom-th"><img src="icons/mingcute_user-follow-2-fill.svg"  type="image/svg+xml">Status</span></th>
+                            <th scope="col"><span class="custom-th"><img src="icons/fluent_shifts-activity-24-filled.svg"  type="image/svg+xml">Last Activity At</span></th>
+                            <th scope="col"><span class="custom-th"><img src="icons/basil_edit-solid.svg"  type="image/svg+xml">Actions</span></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          <tr style="border-bottom: 1px solid #f1ecec;" >
+                            <td >
+                                <div class="custom-td-title">Abad Sait</div>
+                                <div class="custom-td-data">8113892003</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Lifestage</div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">₹50,000</div>
+                            </td>
+                            <td style="display: flex;justify-content: center;">
+                                <div class=" custom-td-box">
+                                    <span class="custom-td-title"><img src="icons/open.svg"  type="image/svg+xml">open</span>
+                                </div>
+                            </td>
+                            <td style=" vertical-align: baseline;">
+                                <div class="custom-td-title">Jul 20, 2023 01:19pm</div>
+                            </td>
+                            <td  style="vertical-align: inherit;display: inline-table;">
+                                <div class="action-bg"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            </section>
+
+        </div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    
+    <div class="modal-dialog">
+      <div class="modal-content" style=" border-top-left-radius: 20px; border-top-right-radius: 20px">
+        <div class="custom-modal-head">
+            <div >Deal Pipeline</div>
+        </div>
+    
+        <div class="modal-body custom-row">
+            <div class="col-sm-3 custom-filter-box">
+                
+            </div>
+            <div class="col-sm-3 custom-filter-box"  ></div>
+            <div class="col-sm-3 custom-filter-box" ></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Apply</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+   
+    <script src="js/vendor.js"></script>
+    <script src="plugins/owl.carousel.min.js"></script>
+    <script>
+
+        $(document).ready(function($) {
+          $("#owl-example").owlCarousel({items:4,  responsive: {
+      0: {
+        items: 1, // Display 1 item on small screens (width less than 576px)
+      },
+      520: {
+        items: 2, // Display 1 item on small screens (width less than 576px)
+      },
+      620: {
+        items: 3, // Display 1 item on small screens (width less than 576px)
+      },
+      768: {
+        items: 4, // Display 2 items on medium screens (width between 576px and 768px)
+      },
+      1600: {
+        items: 4, // Display 3 items on large screens (width between 768px and 992px)
+      },
+      // Add more breakpoints as needed...
+    }});
+        });
+    
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->
+    <link href="css/extrastyle.css" rel="stylesheet">
+    <link href="plugins/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+</head>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+    .main-header .logo,.popover {
+        font-family: 'Poppins', sans-serif;
+    }
+    table tr {
+        height: 50px;
+        border-bottom: 1px solid #f1ecec;
+      
+    }
+
+</style>
+<body>
+    <div class="wrapper thetop">
+       
+        <aside class="main-sidebar bg-white"></aside>
+        <div class=" content-wrapper bg-white"style="min-height: 1056px;">
+            <section class="content no-print" style="background-color: #eff3ff;">
+
+                <!-- title secy=tion -->
+                <div class="flex-between ">
+                    <div class="dashboard-title" style="padding-left: 25px;padding-right: 5px;">Expense Dashboard</div>
+
+                    <!-- filter section -->
+                    <div>
+                        <select class="btn-round input-sm custom-select-style" id="change_lang" style="background-image:  url('/icons/Group\ 82.svg');">
+                            <option >Today</option>
+                            <option >yesterday</option>
+                            <option >This month</option>
+                        </select>
+                        <select class="btn-round input-sm custom-select-style" id="change_lang" style="background-image:  url('/icons/Group\ 82.svg');">
+                            <option >Today</option>
+                            <option >yesterday</option>
+                            <option >This month</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Total values section -->
+                <div class=" row-custom">
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;" >
+                        <div class="info-head"><span class="material-symbols-outlined">note_stack_add</span>Total expense</div>
+                        <div class="col-custom" style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                           <div class=" info-inner-box" >
+                            <i class="fa fas fa-arrow-up "></i>
+                            <span >0.08%</span>
+                           </div>
+                        </div>
+                    </div>
+                      <div class="divider"></div>
+                    </div>
+    
+                    <div class="col-md-3  col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;">
+                        <div class="info-head"><span class="material-symbols-outlined">event_upcoming</span>Total expense due</div>
+                        <div class="col-custom" style="align-items: center;">
+                            <span class="info-text-new  pr-4" >23</span>
+                            <div class=" info-inner-box" >
+                                    <i class="fa fas fa-arrow-up "></i>
+                                    <span >0.08%</span>
+                            </div>  
+                        </div>
+                       </div>
+                      <div class="divider visible-md visible-lg"></div>
+                     
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;">
+                        <div class="info-head"><span class="material-symbols-outlined">note_stack</span>Total income</div>
+                        <div class="col-custom" style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                            <div class=" info-inner-box" >
+                                <i class="fa fas fa-arrow-up "></i>
+                                <span >0.08%</span>
+                            </div>     
+                          </div>
+                      </div>
+                      <div class="divider" ></div>
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div >
+                        <div class="info-head"><span class="material-symbols-outlined">system_update_alt</span>Total income due</div>
+                        <div class="col-custom"style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                           <div class=" info-inner-box" >
+                                <i class="fa fas fa-arrow-up "></i>
+                                <span >0.08%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="divider hidden "></div>
+                    </div>
+    
+                </div>
+
+
+                <!-- tables -->
+                <div class="row">
+
+                    <!-- Expense by category table -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"  style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                                <!-- button -->
+                                <div class="flex-between due-table-position" style="top:75px">
+                                    <div class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+
+
+                                <div class="box-main-title">Expense by category  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <div class="PeriodDate ">
+                                    <span><label>Filter by : </label>This year</span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    
+                                </div>
+                                
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th  ><span class="followup-status-head"> Sl No</span></th>
+                                    <th  colspan="2" ><span class="followup-status-head"> Expense Category</span></th>
+                                    <th  ><span class="followup-status-head"> Location</span></th>
+                                    <th ><span class="followup-status-head">Total Amount</span></th>
+                              
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 1</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 1</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 2</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 2</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 3</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 3</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 4</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 4</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 5</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 5</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                    <tr >
+                                      <td> <div class="custom-td-title"> 6</div></td>
+                                      <td colspan="2" style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Category 6</div>     
+                                      </td>
+                                      <td>
+                                          <div class="custom-td-title">Tvm</div> 
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">10000</div>
+                                      </td>
+                                    
+                                    </tr>
+                                   
+                                   
+                                  </tbody>
+                              
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Expense by projecttable -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"  style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                                <!-- button -->
+                                <div class="flex-between due-table-position" style="top:75px">
+                                    <div class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+
+
+                                <div class="box-main-title">Expense by project <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <div class="PeriodDate ">
+                                    <span><label>Filter by : </label>This year</span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    
+                                </div>
+                                
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th  ><span class="followup-status-head"> Sl No</span></th>
+                                    <th  colspan="2" ><span class="followup-status-head"> Project</span></th>
+                                    <th  ><span class="followup-status-head"> Location</span></th>
+                                    <th ><span class="followup-status-head">Total Amount</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 1</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 1</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 2</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 2</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 3</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 3</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 4</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 4</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 5</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 5</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                  <tr >
+                                    <td> <div class="custom-td-title"> 6</div></td>
+                                    <td colspan="2" style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Project 6</div>     
+                                    </td>
+                                    <td>
+                                        <div class="custom-td-title">Tvm</div> 
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">10000</div>
+                                    </td>
+                                  
+                                  </tr>
+                                 
+                                 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--Recent transactiontable -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 53px 20px;">
+
+                                <!-- button -->
+                                <div class="flex-between due-table-position " >
+                                    <div type="button" class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div type="button" class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+                                
+                                <div class="box-main-title ">Recent transaction <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <!-- <div class="PeriodDate ">
+                                    <span><label> </label></span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button"></div>
+                                </div> -->
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th ><span class="followup-status-head"> Date</span></th>
+                                    <th ><span class="followup-status-head">Ref No.</span></th>
+                                    <th ><span class="followup-status-head">Expense category</span></th>
+                                    <th ><span class="followup-status-head">Location</span></th>
+                                    <th ><span class="followup-status-head">Amount</span></th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    <tr >
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">12/03/2023</div>     
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">5476978689</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Expense 1</div>
+                                      </td>
+                                      
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">Tvm</div>
+                                      </td>
+                                      <td style=" vertical-align:inherit;">
+                                          <div class="custom-td-title">₹587687</div>
+                                      </td>
+                                     
+                                    </tr>
+                                    
+                                  </tbody>
+                               
+                            </table>
+                        </div>
+                    </div>
+                     <!-- Pending transaction  table -->
+                     <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"  style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                                <!-- button -->
+                                <div class="flex-between due-table-position" style="top:75px">
+                                    <div class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+
+
+                                <div class="box-main-title">Pending transaction   <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <div class="PeriodDate ">
+                                    <span><label>Filter by : </label>This year</span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    
+                                </div>
+                                
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th ><span class="followup-status-head"> Date</span></th>
+                                    <th ><span class="followup-status-head">Ref No.</span></th>
+                                    <th ><span class="followup-status-head">Expense category</span></th>
+                                    <th ><span class="followup-status-head">Total Amount</span></th>
+                                    <th ><span class="followup-status-head">Due Amount</span></th>
+                                   
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Expense 1</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                   
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
+        

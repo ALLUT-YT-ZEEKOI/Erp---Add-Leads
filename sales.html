@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="css/vendor.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">    -->
+    <link href="css/extrastyle.css" rel="stylesheet">
+    <link href="plugins/owl.carousel.min.css" rel="stylesheet">
+   
+</head>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+    .main-header .logo,.popover {
+        font-family: 'Poppins', sans-serif;
+    }
+    table tr {
+        height: 50px;
+        border-bottom: 1px solid #f1ecec;
+      
+    }
+
+</style>
+<body>
+    <div class="wrapper thetop">
+       
+        <aside class="main-sidebar bg-white"></aside>
+        <div class=" content-wrapper bg-white"style="min-height: 1056px;">
+            <section class="content no-print" style="background-color: #eff3ff;">
+
+                <!-- title secy=tion -->
+                <div class="flex-between ">
+                    <div class="dashboard-title" style="padding-left: 25px;padding-right: 5px;">Sales Dashboard</div>
+
+                    <!-- filter section -->
+                    <div>
+                        <select class="btn-round input-sm custom-select-style" id="change_lang" style="background-image:  url('/icons/Group\ 82.svg');">
+                            <option >Today</option>
+                            <option >yesterday</option>
+                            <option >This month</option>
+                        </select>
+                        <select class="btn-round input-sm custom-select-style" id="change_lang" style="background-image:  url('/icons/Group\ 82.svg');">
+                            <option >Today</option>
+                            <option >yesterday</option>
+                            <option >This month</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div  class="col-md-12 col-lg-6 mt-4">
+                       
+                        <div class="project-box flex-col-center">
+                            
+                            <div class="flex-arround">
+                                <div>
+                                    <div class="info-head" style="width: 115px;"><img class="info-img" src="icons/fluent_person-24-filled.svg" type="image/svg+xml">Total</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                                <div class="divider"></div>
+                             
+                                  <div>
+                                    <div class="info-head"><img class="info-img" src="icons/complete.svg" type="image/svg+xml">Completed</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                            </div>
+                            <div class="flex-arround mt-8">
+                                <div>
+                                    <div class="info-head"><img class="info-img" src="icons/calander.svg" type="image/svg+xml">Upcoming</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                   
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                                <div class="divider"></div>
+                             
+                                  <div>
+                                    <div class="info-head"><img class="info-img" src="icons/Overdue.svg" type="image/svg+xml">Overdue</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                            </div>
+
+                        </div>
+                    </div>
+                    <div  class="col-md-12 col-lg-6 mt-4">
+                       
+                        <div class="project-box flex-col-center">
+                            
+                            <div class="flex-arround">
+                                <div>
+                                    <div class="info-head" style="width: 115px;"><img class="info-img" src="icons/fluent_person-24-filled.svg" type="image/svg+xml">Total</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                                <div class="divider"></div>
+                             
+                                  <div>
+                                    <div class="info-head"><img class="info-img" src="icons/complete.svg" type="image/svg+xml">Completed</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                            </div>
+                            <div class="flex-arround mt-8">
+                                <div>
+                                    <div class="info-head"><img class="info-img" src="icons/calander.svg" type="image/svg+xml">Upcoming</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                   
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                                <div class="divider"></div>
+                             
+                                  <div>
+                                    <div class="info-head"><img class="info-img" src="icons/Overdue.svg" type="image/svg+xml">Overdue</div>
+                                    <div class="col-custom" style="align-items: center;">
+                                       <span class="info-text-new">23</span>
+                                    </div>
+                                    
+                                    <div>
+                                        <span class="info-last-month-text">vs last month:</span>
+                                        <span class="info-last-month-count">20</span>
+                                    </div>
+                                   
+                                </div>
+                                  
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Total values section -->
+                <div class=" row-custom">
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;" >
+                        <div class="info-head"><img class="info-img" src="icons/Sales.svg"  type="image/svg+xml">Total sales</div>
+                        <div class="col-custom" style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                           <div class=" info-inner-box" >
+                            <i class="fa fas fa-arrow-up "></i>
+                            <span >0.08%</span>
+                           </div>
+                        </div>
+                    </div>
+                      <div class="divider"></div>
+                    </div>
+    
+                    <div class="col-md-3  col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;">
+                        <div class="info-head"><img class="info-img" src="icons/Payment method.svg"  type="image/svg+xml">Total purchase</div>
+                        <div class="col-custom" style="align-items: center;">
+                            <span class="info-text-new  pr-4" >23</span>
+                            <div class=" info-inner-box" >
+                                    <i class="fa fas fa-arrow-up "></i>
+                                    <span >0.08%</span>
+                            </div>  
+                        </div>
+                       </div>
+                      <div class="divider visible-md visible-lg"></div>
+                     
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div style="width: 180px;">
+                        <div class="info-head"><img class="info-img" src="icons/expense.svg"  type="image/svg+xml">Total expense</div>
+                        <div class="col-custom" style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                            <div class=" info-inner-box" >
+                                <i class="fa fas fa-arrow-up "></i>
+                                <span >0.08%</span>
+                            </div>     
+                          </div>
+                      </div>
+                      <div class="divider" ></div>
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                      <div >
+                        <div class="info-head"><img class="info-img" src="icons/Invoice.svg"  type="image/svg+xml">Total invoice due</div>
+                        <div class="col-custom"style="align-items: center;">
+                           <span class="info-text-new pr-4">23</span>
+                           <div class=" info-inner-box" >
+                                <i class="fa fas fa-arrow-up "></i>
+                                <span >0.08%</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="divider visible-md visible-lg "></div>
+                    </div>
+    
+                    <div class="col-md-3 col-sm-6 col-xs-6 info-col pt-4 ">
+                        <div style="width: 180px;">
+                          <div class="info-head"><img class="info-img" src="icons/Choices.svg"  type="image/svg+xml">Total purchase due</div>
+                          <div class="col-custom" style="align-items: center;">
+                             <span class="info-text-new pr-4">23</span>
+                             <div class=" info-inner-box" >
+                                <i class="fa fas fa-arrow-up "></i>
+                                <span >0.08%</span>
+                            </div>
+                          </div>
+                          
+                      </div>
+                        <div class="divider"></div>
+                    </div>
+      
+                    <div class="col-md-3  col-sm-6 col-xs-6 info-col pt-4 ">
+                        <div style="width: 180px;" >
+                            <div class="info-head"><img class="info-img" src="icons/Accounts.svg"  type="image/svg+xml">Total expense due</div>
+                            <div class="col-custom" style="align-items: center;">
+                                <span class="info-text-new pr-4" >23</span>
+                                <div class=" info-inner-box" >
+                                    <i class="fa fas fa-arrow-up "></i>
+                                    <span >0.08%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="divider visible-md visible-lg"></div>
+                    
+                    </div>
+                </div>
+
+                <!-- recivable box -->
+                <div class="receivables-box w100" style="padding: 1% 3% 3% 3%;">
+                    <div class="box-main-title">Total Receivables <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                    <span class="custom-source-val ">Total Receivables : ₹ 1,00,00,000</span>
+                    <div class=" row-custom " style="justify-content: space-between;">
+
+                        <div class="col-sm-5 col-md-2  col-xs-5 info-col pt-4   flex-col-end">
+                          <div class=" h100" >
+                            <div class="custom-th">CURRENT</div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val">₹000.000</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-2 flex-col-end" >
+                            <div  class="divider" ></div>
+                        </div>
+
+                        <div class="col-sm-5  col-md-2 col-xs-5 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="custom-th" style="color: red;">OVERDUE</div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val" >₹450.800</span>
+                              
+                            </div>
+                            <div class="followup-status-head">
+                                0-15 Days
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="info-head"></div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val">₹450.800</span>
+                              </div>
+                              <div class="followup-status-head">
+                                16-30 Days
+                            </div>   
+                          </div> 
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="col-custom"style="align-items: center;">
+                               <span class="receivables-box-val">₹450.800</span>
+                               
+                            </div>
+                            <div class="followup-status-head">
+                                31-45 Days
+                            </div>
+                          </div>
+                     
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                            <div >
+                              <div class="col-custom" style="align-items: center;">
+                                 <span class="receivables-box-val">₹450.800</span>
+                              </div>
+                              <div class="followup-status-head">
+                                46-60 Days
+                              </div>
+
+                            </div>
+                           
+                        </div>
+          
+                    </div>
+    
+                </div>
+
+                <!-- payble box -->
+                <div class="receivables-box w100" style="padding: 1% 3% 3% 3%;">
+                    <div class="box-main-title">Total Payables  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                    <span class="custom-source-val ">Total Payables : ₹ 1,00,00,000</span>
+                    <div class=" row-custom " style="justify-content: space-between;">
+
+                        <div class="col-sm-5 col-md-2  col-xs-5 info-col pt-4   flex-col-end">
+                          <div class=" h100" >
+                            <div class="custom-th">CURRENT</div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val">₹000.000</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-2 flex-col-end" >
+                            <div  class="divider" ></div>
+                        </div>
+
+                        <div class="col-sm-5  col-md-2 col-xs-5 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="custom-th" style="color: red;">OVERDUE</div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val" >₹450.800</span>
+                              
+                            </div>
+                            <div class="followup-status-head">
+                                0-15 Days
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="info-head"></div>
+                            <div class="col-custom" style="align-items: center;">
+                               <span class="receivables-box-val">₹450.800</span>
+                              </div>
+                              <div class="followup-status-head">
+                                16-30 Days
+                            </div>   
+                          </div> 
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                          <div >
+                            <div class="col-custom"style="align-items: center;">
+                               <span class="receivables-box-val">₹450.800</span>
+                               
+                            </div>
+                            <div class="followup-status-head">
+                                31-45 Days
+                            </div>
+                          </div>
+                     
+                        </div>
+        
+                        <div class="col-sm-4 col-md-2 col-xs-4 info-col pt-4 flex-col-end">
+                            <div >
+                              <div class="col-custom" style="align-items: center;">
+                                 <span class="receivables-box-val">₹450.800</span>
+                              </div>
+                              <div class="followup-status-head">
+                                46-60 Days
+                              </div>
+
+                            </div>
+                           
+                        </div>
+          
+                    </div>
+    
+                </div>
+
+                <div class="row">
+                    <!-- chart section -->
+                    <div class="col-xs-12  col-lg-12">
+                        <div class="responsive-box" >
+                            <div class="box-main-title">Sales and Expenses  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                            <div class="PeriodDate ">
+                                <span><label>Filter by :</label> Last 12 months</span>
+                                <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                            </div>
+                            <canvas id="myBarChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Toppest section -->
+                    <div class=" col-xs-12  ">
+                        
+                    <div class="toporder-box" >
+                        <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                            <div class="box-main-title">Toppest  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                            <div class="PeriodDate ">
+                                <span><label>Filter by : </label>This year</span>
+                                <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="flex-align col-xs-12 col-md-4" style="padding: 20px 0 ;align-items: center;">
+                                <div class="top-avator mx-8"></div>
+                                <div class=" flex-col-arround" >
+                                    <div class="  box-main-title">Top Expense</div>
+                                    <div class="   info-last-month-text" style="line-height: 2;">Expense id</div>
+                                    <div class="   followup-status-head" style="color:#0C3959">Fuel Expense</div>
+                                </div>
+                                <div style="height:68px ;justify-content: center;" class="flex-col-end mx-8 ">
+                                    
+                                    <div class="info-last-month-text">12.03.2023</div>
+                                    <div class="followup-status-head" style="color: #05BC51;">10,00,000</div>
+                                </div>
+                                </div>
+        
+                                <div class="flex-align col-xs-12 col-md-4" style="padding: 20px 0 ;align-items: center;">
+                                <div class="top-avator mx-8" style="background: #CCDAFE;"></div>
+                                <div class=" flex-col-arround" >
+                                    <div class="  box-main-title">Top Sale</div>
+                                    <div class="  info-last-month-text" style="line-height: 2;">Sale id</div>
+                                    <div class="  followup-status-head" style="color:#0C3959">Fuel Expense</div>
+                                </div>
+                                <div style="height:68px;justify-content: center " class="flex-col-end mx-8">
+                                    
+                                    <div class="info-last-month-text">12.03.2023</div>
+                                    <div class="followup-status-head" style="color: #05BC51;">10,00,000</div>
+                                </div>
+                                </div>
+        
+                                <div class="flex-align col-xs-12 col-md-4" style="padding: 20px 0;align-items: center; ">
+                                <div class="top-avator mx-8" style="background: #E1F2FF;"></div>
+                                <div class=" flex-col-arround" >
+                                    <div class=" box-main-title">Top Purchase</div>
+                                    <div class=" info-last-month-text" style="line-height: 2;">Purchase id</div>
+                                    <div class=" followup-status-head" style="color:#0C3959">Fuel Expense</div>
+                                </div>
+                                <div style="height:68px ;justify-content: center;" class="flex-col-end mx-8">
+                                    
+                                    <div class="info-last-month-text">12.03.2023</div>
+                                    <div class="followup-status-head" style="color: #05BC51;">10,00,000</div>
+                                </div>
+                                </div>
+        
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- tables -->
+                <div class="row">
+
+                    <!-- Sales payment due table -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"  style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 0 20px;">
+                                <!-- button -->
+                                <div class="flex-between due-table-position" style="top:75px">
+                                    <div class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+
+
+                                <div class="box-main-title">Sales payment due  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <div class="PeriodDate ">
+                                    <span><label>Filter by : </label>This year</span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button">Change</div>
+                                    
+                                </div>
+                                
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th scope="col"><span class="followup-status-head"> Date</span></th>
+                                    <th scope="col"><span class="followup-status-head">Customer</span></th>
+                                    <th scope="col"><span class="followup-status-head">Invoice No</span></th>
+                                    <th scope="col"><span class="followup-status-head">Amount</span></th>
+                                    <th scope="col"><span class="followup-status-head">Action</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Purchase payment due table -->
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="toporder-box"style="overflow-x: auto;">
+                            <div style="border-bottom: 1px solid#C6D1ED; padding: 20px 20px 53px 20px;">
+
+                                <!-- button -->
+                                <div class="flex-between due-table-position " >
+                                    <div type="button" class="button-box-1">
+                                        <img src="icons/left-con.svg"  type="image/svg+xml">
+                                    </div>
+                                    <div type="button" class="button-box-1">
+                                        <img src="icons/right-icon.svg"  type="image/svg+xml">
+                                    </div>
+                                </div>
+                                
+                                <div class="box-main-title ">Purchase payment due  <img class="info-img" src="icons/ques.svg"  type="image/svg+xml"></div>
+                                <!-- <div class="PeriodDate ">
+                                    <span><label> </label></span>
+                                    <div data-toggle="modal" data-target="#staticBackdrop" type="button"></div>
+                                </div> -->
+                            </div>
+    
+                            <table class="table text-center table-no-divider" style="margin: 0;">
+                                <thead >
+                                  <tr>
+                                    <th scope="col"><span class="followup-status-head"> Date</span></th>
+                                    <th scope="col"><span class="followup-status-head">Customer</span></th>
+                                    <th scope="col"><span class="followup-status-head">Invoice No</span></th>
+                                    <th scope="col"><span class="followup-status-head">Amount</span></th>
+                                    <th scope="col"><span class="followup-status-head">Action</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  <tr >
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">12/03/2023</div>     
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">Abad</div>
+                                    </td>
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">5476978689</div>
+                                    </td>
+                                    
+                                    <td style=" vertical-align:inherit;">
+                                        <div class="custom-td-title">₹587687</div>
+                                    </td>
+                                    <td  style="display: flex;justify-content: center;">
+                                        <div class="action-bg mt-2"><img src="icons/carbon_view-filled.svg"  type="image/svg+xml"></div>
+                                    </td>
+                                  </tr>
+                                  
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+    const labels = ['Label 1', 'Label 2', 'Label 3', 'Label 4','Label 1', 'Label 2', 'Label 3', 'Label 4','Label 1', 'Label 2', 'Label 3', 'Label 4'];
+    const data = [0, 0, 0, 0,0, 0, 0, 0,0, 0, 0, 0];
+    const data1 = [10, 20, 15, 30,10, 20, 15, 30,10, 20, 15, 30];
+    const data2 = [25, 15, 20, 10,25, 15, 20, 10,25, 15, 20, 10];
+
+
+    const ctx = document.getElementById('myBarChart').getContext('2d');
+
+    const myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: '',
+                data: data,
+              
+                backgroundColor: '#FFFFFF', // Bar color for dataset 1
+                borderColor:'#FFFFFF', // Border color for dataset 1
+                borderWidth: 1
+            },{
+                label: 'Data Values 1',
+                data: data1,
+                backgroundColor: '#1B7810', // Bar color for dataset 1
+                borderColor: 'rgba(75, 192, 192, 1)', // Border color for dataset 1
+                borderWidth: 1
+            }, {
+                label: 'Data Values 2',
+                data: data2,
+                backgroundColor:  '#FA7704', // Bar color for dataset 2
+                borderColor: 'rgba(255, 99, 132, 1)', // Border color for dataset 2
+                borderWidth: 1
+            },{
+                label: '',
+                data: data,
+                backgroundColor: '#FFFFFF', // Bar color for dataset 1
+                borderColor: '#FFFFFF', // Border color for dataset 1
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true, // Make the chart responsive
+            scales: {
+                y: {
+                    beginAtZero: true, // Start the y-axis from zero
+                    grid: {
+                    display: false // Hide x-axis grid lines
+                    }
+                },
+                x:{
+                    
+                    grid: {
+                    display: false // Hide x-axis grid lines
+                    }
+                }
+            }
+        },
+        
+    });
+    
+
+    </script>
+</body>
+</html>
+        
