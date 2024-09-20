@@ -74,10 +74,58 @@
 
                     <div class="right_section">
                         <div class="right_section_head">
-                            <div class="_customer_h">
-                                Customer
-                            </div>
+
+                            <div class="_customer_h ">
+                                Add a new contact</div>
+
+                            <!-- form -->
+
+
                         </div>
+
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="subtext_1">
+                                    Contact type *
+                                    <div class="custom-search-container">
+                                        <span class="customer_select">
+                                            <i class="bi bi-person-fill"></i>
+                                            Lead</span>
+                                        <i class="custom-dropdown-arrow bi bi-arrow-down"></i>
+
+                                        <div class="custom-dropdown-content">
+                                            <a href="#">Customer Three</a>
+                                            <a href="#">Customer Four</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" style="display: flex;justify-content: center;align-items: center;">
+                                <div style="display: flex;">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                      <label for="html">Individual</label><br>
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                      <label for="html">Business</label><br>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subtext_1">
+                                    Contact type *
+                                    <div class="custom-search-container">
+                                        <span class="customer_select">Lead</span>
+                                        <i class="custom-dropdown-arrow bi bi-arrow-down"></i>
+
+                                        <div class="custom-dropdown-content">
+                                            <a href="#">Customer Three</a>
+                                            <a href="#">Customer Four</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -90,6 +138,20 @@
     </div>
     <style>
         @media screen and (max-width: 1400px) {
+            .responsive {
+                flex: 0 0 33.33%;
+                /* Adjust to 4 out of 12 columns */
+                max-width: 33.33%;
+            }
+
+            .responsive_second_dv {
+                flex: 0 0 66.67%;
+                /* Adjust to 8 out of 12 columns */
+                max-width: 66.67%;
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
             .responsive {
                 flex: 0 0 33.33%;
                 /* Adjust to 4 out of 12 columns */

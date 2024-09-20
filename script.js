@@ -91,3 +91,42 @@ customerData.forEach(customer => {
 
     customerCardsContainer.appendChild(customerCard);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle dropdown
+    function toggleDropdown(event) {
+        const container = event.currentTarget;
+        const dropdownMenu = container.querySelector('.custom-dropdown-content');
+        const dropdownArrow = container.querySelector('.custom-dropdown-arrow');
+
+        if (dropdownMenu.classList.contains('show')) {
+            dropdownMenu.classList.remove('show');
+            setTimeout(() => dropdownMenu.style.display = 'none', 500); // Wait for animation to finish
+            dropdownArrow.classList.remove('up'); // Change arrow to down position
+        } else {
+            dropdownMenu.style.display = 'block';
+            setTimeout(() => dropdownMenu.classList.add('show'), 0); // Allow display to register before animation
+            dropdownArrow.classList.add('up'); // Rotate arrow to up position
+        }
+    }
+
+    // Attach event listeners to each dropdown container
+    document.querySelectorAll('.custom-search-container').forEach(container => {
+        container.addEventListener('click', toggleDropdown);
+    });
+
+    // To hide the dropdown if clicked outside
+    document.addEventListener('click', function (event) {
+        document.querySelectorAll('.custom-search-container').forEach(container => {
+            const dropdownMenu = container.querySelector('.custom-dropdown-content');
+            const dropdownArrow = container.querySelector('.custom-dropdown-arrow');
+
+            if (!container.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('show');
+                setTimeout(() => dropdownMenu.style.display = 'none', 500); // Wait for animation to finish
+                dropdownArrow.classList.remove('up'); // Rotate arrow to down position
+            }
+        });
+    });
+});
